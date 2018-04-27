@@ -116,8 +116,8 @@ if [ $stage -le 13 ]; then
     --trainer.max-param-change=2.0 \
     --trainer.num-epochs=3 \
     --trainer.samples-per-iter=400000 \
-    --trainer.optimization.num-jobs-initial=2 \
-    --trainer.optimization.num-jobs-final=10 \
+    --trainer.optimization.num-jobs-initial=1 \
+    --trainer.optimization.num-jobs-final=4 \
     --trainer.optimization.initial-effective-lrate=0.0015 \
     --trainer.optimization.final-effective-lrate=0.00015 \
     --trainer.optimization.minibatch-size=256,128 \

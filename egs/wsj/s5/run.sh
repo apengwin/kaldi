@@ -23,8 +23,11 @@ decode=true  # set to false to disable the decoding-related scripts.
 #wsj0=/data/corpora0/LDC93S6B
 #wsj1=/data/corpora0/LDC94S13B
 
-wsj0=/export/corpora5/LDC/LDC93S6B
-wsj1=/export/corpora5/LDC/LDC94S13B
+#wsj0=/export/corpora5/LDC/LDC93S6B
+#wsj1=/export/corpora5/LDC/LDC94S13B
+
+wsj0=/mnt/disk1/allan/data/LDC93S6B/
+wsj1=/mnt/disk1/allan/data/LDC94S13B/
 
 
 if [ $stage -le 0 ]; then
@@ -147,8 +150,6 @@ if [ $stage -le 2 ]; then
     #  exp/tri1/decode_nosp_tgpr_dev93_aligned || exit 1;
   fi
 fi
-
-exit 0 ## TEMP
 
 if [ $stage -le 3 ]; then
   # tri2b.  there is no special meaning in the "b"-- it's historical.
